@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        working-directory: frontend
-        run: npm install --legacy-peer-deps
+     - name: Install dependencies
+  working-directory: frontend
+  run: npm install --legacy-peer-deps --force
 
       - name: Build project
         working-directory: frontend
