@@ -1,0 +1,16 @@
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(45,74,62,0.4) 100%);
+}
+
+.parallax-slow {
+  will-change: transform;
+}
