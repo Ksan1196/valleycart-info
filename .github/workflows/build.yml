@@ -18,8 +18,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        working-directory: frontend
-        run: npm install --legacy-peer-deps --force
+  working-directory: frontend
+  run: |
+    rm -rf node_modules package-lock.json
+    npm install --legacy-peer-deps
+
 
       - name: Build project
         working-directory: frontend
